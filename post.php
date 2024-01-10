@@ -8,12 +8,18 @@
 <body align="center">
     <h1 style="text-align: center;">Webboard Sumontha</h1>
     <hr>
-    <div style="text-align: center;">
-    <?php 
-    $id1 = $_GET['id'];
-    ?>
-    <h4 style="text-align: center;">ต้องการดูกระทู้หมายเลข<?php echo $id1;?> </h4>
+    <div align="center">
+        ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?><br>
+        <br>
+        <?php
+            if($_GET["id"]%2==0){
+                echo "เป็นกระทู้หมายเลขคู่";
+            }else{
+                echo "เป็นกระทู้หมายเลขคี่";
+            }
+        ?>
     </div>
+    <br>
     <table style="border: 2px solid black; width:40%" align="center">
         <tr style="background-color: #6cd2fe ;"><td>แสดงความคิดเห็น</td></tr>
         <tr><td>
@@ -22,7 +28,7 @@
         </td></tr>
     </table>
     <div style="text-align: center;">
-        <a href="index.html">กลับไปหน้าหลัก</a>
+        <a href="index.php">กลับไปหน้าหลัก</a>
     </div>
 </body>
 </html>

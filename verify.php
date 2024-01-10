@@ -9,9 +9,14 @@
     <h1 style="text-align: center;">Webboard Sumontha</h1>
     <hr>
     <div style="text-align: center;">
-        เข้าสู่ระบบด้วย<br>
-        Login = <?php echo $_POST['login'];?><br>
-        Password = <?php echo $_POST['pwd'];?>
+    <?php
+        if (($_POST["login"] == "admin") && ($_POST["pwd"] == "ad1234")) {
+            echo "ยินดีต้อนรับคุณ ADMIN";
+        } else if (($_POST["login"] == "member") && ($_POST["pwd"] == "mem1234")) {
+            echo "ยินดีต้อนรับคุณ MEMBER";
+        } else {echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";}
+    ?><br>
+      <a href="index.php">กลับไปยังหน้าหลัก</a>
     </div>
 </body>
 </html>

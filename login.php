@@ -18,7 +18,7 @@
     </form>
     <br>
     <div style="text-align: center;">
-        ถ้ายังไม่ได้เป็นสมาชิก<a href="register.html">กรุณาสมัครสมาชิก</a>
+        ถ้ายังไม่ได้เป็นสมาชิก<a href="register.php">กรุณาสมัครสมาชิก</a>
     </div>
 </body>
 </html>

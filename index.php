@@ -60,18 +60,6 @@
     </div>
     <?php } ?>
     </div>
-
-    <table class="table table-striped mt-4 ">
-        <?php
-            for($i=1;$i<=10;$i++){       
-                echo "<tr><td class='d-flex justify-content-between'><a href=post.php?id=$i sytle=text-decoration:none>กระทู้ที่ $i</a>";
-                if(isset($_SESSION['id']) && $_SESSION['role']=='a'){
-                    echo "&nbsp;&nbsp;&nbsp;<a href=delete.php?id=$i class='btn btn-danger btn-sm'><i class='bi bi-trash'></i></a>";
-                }
-                echo "</td></tr>";
-            }
-        ?>
-    </table>
     </div>
 </body>
 </html>

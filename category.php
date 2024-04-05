@@ -36,9 +36,9 @@ session_start();
                 <?php
                 if (isset($_SESSION['add_cat'])) {
                     if ($_SESSION['add_cat'] == "success") {
-                        echo "<div class="alert alert-success">เพิ่มหมวดหมู่เรียบร้อย</div>";
+                        echo "<div class='alert alert-success'>เพิ่มหมวดหมู่เรียบร้อย</div>";
                     } else {
-                        echo "<div class="alert alert-danger">ไม่สามารถเพิ่มหมวดหมู่ได้</div>";
+                        echo "<div class='alert alert-danger'>ไม่สามารถเพิ่มหมวดหมู่ได้</div>";
                     }
                     unset($_SESSION['add_cat']);
                 }

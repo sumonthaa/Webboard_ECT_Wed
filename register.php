@@ -101,7 +101,7 @@
         <div class="col-lg-12 d-flex justify-content-center">
             <button type="submit" class="btn btn-primary btn-sm me-2">
             <i class="bi bi-save"></i>สมัครสมาชิก</button>
-            <button type="พำหำะ" class="btn btn-danger btn-sm">
+            <button type="reset" class="btn btn-danger btn-sm">
             <i class="bi bi-x-square"></i>ยกเลิก</button>
         </div>
     </div>
